@@ -20,10 +20,13 @@ def readme(logo_end_line=14):
     return long_description
 
 classifiers = [
-    "Programming Language :: Python :: 3.6",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Development Status :: 5 - Production/Stable",
@@ -34,8 +37,8 @@ classifiers = [
 ]
 
 requires = [
-    "pillow >= 9.0.1,< 9.6.0",
-    "requests >= 2.27.1,< 2.31.0"
+    "pillow >= 9.0.1,< 12.0",
+    "requests ~= 2.27.1"
 ]
 
 #--------------------------------------------------------------------------------------------------------------

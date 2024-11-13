@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from amazoncaptcha import AmazonCaptcha, AmazonCaptchaCollector, ContentTypeError, NotFolderError, __version__
+from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
 import unittest
@@ -67,7 +68,8 @@ class TestAmazonCaptcha(unittest.TestCase):
         options = webdriver.ChromeOptions()
         options.add_argument('no-sandbox')
         options.add_argument('headless')
-        driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+        service=ChromeService(ChromeDriverManager().install())
+        driver = webdriver.Chrome(service=service, options=options)
 
         solutions = list()
         for i in range(5):

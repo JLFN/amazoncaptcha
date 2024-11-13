@@ -1,6 +1,6 @@
-pillow ~= 9.5.0
-requests ~= 2.30.0
-coverage >= 6.3.1
-codecov >= 2.1.12
-webdriver_manager ~= 3.8.6
-selenium ~= 4.9.1
+pillow ~= 11.0
+requests ~= 2.32.3
+coverage ~= 7.6.4
+codecov ~= 2.1.13
+webdriver_manager ~= 4.0.2
+selenium ~= 4.26.1
